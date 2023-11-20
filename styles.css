@@ -40,6 +40,10 @@ nav img {
     border-radius: 10px;
 }
 
+.navbar-nav {
+    flex-direction: row;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
