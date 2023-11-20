@@ -1,0 +1,254 @@
+@font-face {
+    font-family: 'glacial';
+    src: url(src/GlacialIndifference-Regular.otf);
+}
+
+@font-face {
+    font-family: 'jost';
+    src: url(src/Jost-Regular.ttf);
+}
+
+
+@font-face {
+    font-family: 'outfit';
+    src: url(src/Outfit-VariableFont_wght.ttf);
+}
+
+:root {
+    --cream: #FFFFF6;
+    --grey: #F8F8F7;
+    --ice: #BAEBFF;
+    --main: #38B6FF;
+    --indigo: #7DBFF8;
+    --navy: #0B3C6D;
+    --dark-navy: #1E2D53;
+}
+
+body {
+    font-family: 'jost';
+}
+
+nav {
+    background-color: white;
+    padding: 10px;
+    height: 100px;
+    
+}
+
+nav img {
+    width: 50px;
+    border-radius: 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+li {
+    display: inline;
+    margin-left: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    font-family: 'outfit';
+}
+
+
+.welcome {
+    background-color: var(--grey);
+    padding: 20px;
+    font-family: 'outfit';
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    min-height: 350px;
+    height: 80vh;
+}
+
+.welcome div {
+    text-align: center;
+    justify-content: center;    
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.white-section {
+    background-color: #fff;
+    padding: 20px;
+}
+
+
+.heading {
+    font-family: 'outfit';
+    text-align: center;
+}
+
+.projects {
+    padding-bottom: 100px;    
+}
+
+.project {
+    background-color: var(--grey);
+    border-radius: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    height: 600px;
+    overflow-y: auto;
+}
+
+.project .heading {
+    background-color: white;
+    font-family: 'glacial';
+    border-radius: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.research-heading {
+    color: var(--main);
+    text-align: center;
+}
+
+.vstack {
+    height: 100%;
+}
+
+.thumbnail {
+    height: inherit;
+    display: flex;
+    align-items: center;
+}
+
+.thumbnail img, .research-content img, canvas {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.medal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.medal img {
+    height: 40px;
+}
+
+.center-box {
+    text-align: center;
+}
+
+.project button {
+    border: none;
+    font-family: 'outfit';
+    background: none;
+    padding: 0;
+}
+
+.project button a {
+    color: var(--dark-navy);
+    transition: 0.5s;    
+}
+
+.project button a:hover {
+    color: var(--main);
+}
+
+.download svg {
+    height: 50px;
+}
+
+/* Research styles */
+
+.research-tab {
+    display: flex;
+    justify-content: center;
+}
+
+.research-tab h4 {
+    background-color: var(--main);
+    color: white;
+    font-family: 'glacial';
+    padding: 15px 50px 15px 50px;
+    border-radius: 10px;
+}
+
+.research-tech {
+    font-family: 'glacial';
+}
+
+.research-sections {
+    display: grid;
+    justify-items: center;
+}
+
+.research-sections a {
+    width: fit-content;
+}
+
+.grey-research {
+    background-color: var(--grey);
+}
+
+.white-research {
+    background-color: white;
+}
+
+.container .hstack {
+    justify-content: space-around;
+}
+
+.container .hstack div {
+    width: 50%;
+}
+
+.research-content h3 {
+    font-family: 'glacial';
+    text-align: center;
+}
+
+
+
+.model {
+    font-family: 'outfit';
+    font-weight: bold;
+}
+
+.research-content .row {
+    align-items: center;
+}
+
+.research-content li {
+    display: list-item;
+    list-style-type: disc;
+    text-align: left;
+}
+
+
+.divider {
+    background-color: var(--navy);
+    height: 10vh;
+}
+
+.ice {
+    background-color: var(--ice);
+}
+
+.indigo {
+    background-color: var(--indigo);
+}
+
+.dark {
+    background-color: var(--dark-navy);
+}
