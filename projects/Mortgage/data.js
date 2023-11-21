@@ -248,6 +248,3 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-
-});
-
