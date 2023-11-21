@@ -223,6 +223,11 @@ a {
 }
 
 
+.chart {
+    min-height: 150px;
+    min-width: 250px;
+}
+
 
 .model {
     font-family: 'outfit';
