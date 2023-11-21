@@ -22,7 +22,7 @@
           <img src="../Logo.png">
         </a>
 
-        <ul class="navbar-nav">
+        <ul class="navbar-nav d-none d-sm-flex">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
           </li>
@@ -66,18 +66,18 @@
 
     <!-- Research content starts here, add picture carousel for justifying the figures used -->
     <section class="research-content">
-      <div class="white-research p-5" id="q1">
+      <div class="white-research p-lg-5" id="q1">
         <h1 class="mb-5 heading">What is the total cost of an average mortgage?</h1>
       
         <div class="container p-5">
           <div class="row g-5 pb-5">
-            <div class="col-6">
+            <div class="col-lg-6">
               <h3 class="p-3">Average mortgage plan in 1997, UK</h3>  
             </div>
-            <div class="col-6"></div>
+            <div class="col-lg-6"></div>
           </div>
           <div class="row g-5">
-            <div class="col-6">
+            <div class="col-lg-6">
               <p1>Using the ONS HPI dataset, I assembled the following mortgage plan for an average UK first-time buyer in 1997.</p1>
               <br>
               <br>
@@ -98,27 +98,27 @@
        
               <p1>Given that interest rates on mortgages are variable, it can be difficult to predict the monthly cost of a mortgage. By using the average interest rates on mortgages for each year, the yearly cost of this mortgage plan can be calculated. I will be using the Bank of England's data on various LTV and the average mortgage rate data from an ONS dataset in order to achieve this </p1>         
             </div>
-            <div class="col-6">
+            <div class="col-lg-6 chart">
               <canvas class="shadow" id="q1-1"></canvas>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="grey-research p-5">
+      <div class="grey-research p-lg-5">
       
         <div class="container p-5">
           <div class="row g-5 pb-5">
-            <div class="col-6"></div>
-            <div class="col-6">
+            <div class="col-lg-6"></div>
+            <div class="col-lg-6">
               <h3 class="p-3">Missing data</h3>   
             </div>
           </div>
           <div class="row g-5">
-            <div class="col-6">
+            <div class="col-lg-6">
               <img class="shadow" alt="missing" src="Mortgage/Missing LTV.png">
             </div>
-            <div class="col-6">
+            <div class="col-lg-6">
               <p1>Both the Bank of England and the ONS HPI datasets were missing data for some of the years that the mortgage plan covered. The Bank of England's LTV data on 10% deposits only covered the range from 2008 to 2023. Furthermore, the only consistent data from this dataset was the 2 year fixed interest rate as the 5 year fixed interest rate data had a lot of gaps. The ONS average mortgage rates covered the range from 2004 to 2022 whereas I needed data on variable mortgage rates from at least the year 2000.</p1>
               <br>
               <br>
@@ -128,17 +128,17 @@
         </div>
       </div>
 
-      <div class="white-research p-5">
+      <div class="white-research p-lg-5">
       
         <div class="container p-5">
           <div class="row g-5 pb-5">
-            <div class="col-6">
+            <div class="col-lg-6">
               <h3 class="p-3">Neural Network: 2 year fixed interest rates on 90% Loan-To-Value</h3>  
             </div>
-            <div class="col-6"></div>
+            <div class="col-lg-6"></div>
           </div>
           <div class="row g-5">
-            <div class="col-6">
+            <div class="col-lg-6">
               <h5 class="model">Objective: Estimate what the interest rate could have been in 1997</h5>
               <br>
               <br>
@@ -159,27 +159,27 @@
               <br>
               <p1>This seemed to be a reasonable estimation for 1997 when comparing this figure to the 75% LTV interest rate data and the bank rate for that year.</p1>      
             </div>
-            <div class="col-6">
+            <div class="col-lg-6">
               <img class="shadow" alt="graph" src="Mortgage/75 LTV.png">
             </div>
           </div>
         </div>
       </div>
 
-      <div class="grey-research p-5">
+      <div class="grey-research p-lg-5">
       
         <div class="container p-5">
           <div class="row g-5 pb-5">
-            <div class="col-6"></div>
-            <div class="col-6">
+            <div class="col-lg-6"></div>
+            <div class="col-lg-6">
               <h3 class="p-3">Neural Network: Average variable mortgage rate</h3>   
             </div>
           </div>
           <div class="row g-5">
-            <div class="col-6">
+            <div class="col-lg-6">
               <img class="shadow" alt="graph" src="../src/thumbnails/mortgage.png">
             </div>
-            <div class="col-6">
+            <div class="col-lg-6">
               <h5 class="model">Objective: Estimate what the interest rate could have been in 2000-2003</h5>
               <br>
               <br>
@@ -204,17 +204,17 @@
         </div>
       </div>
 
-      <div class="white-research p-5">
+      <div class="white-research p-lg-5">
       
         <div class="container p-5">
           <div class="row g-5 pb-5">
-            <div class="col-6">
+            <div class="col-lg-6">
               <h3 class="p-3">Yearly payment breakdown</h3>  
             </div>
-            <div class="col-6"></div>
+            <div class="col-lg-6"></div>
           </div>
           <div class="row g-5">
-            <div class="col-6">
+            <div class="col-lg-6">
               <p1>I chose to create a payment plan for a capital repayment mortgage as this tends to be more common compared to an interest only mortgage. By combining the estimated data produced from the models and the official interest rate data, the following payment breakdown can be produced.</p1>
               <br>
               <br>
@@ -223,7 +223,7 @@
               <br>
               <p1>By December 2011, the initial amount lent by the bank was recovered and so after this point the bank was earning profit only.</p1>
             </div>
-            <div class="col-6">
+            <div class="col-lg-6 chart">
               <canvas class="shadow" id="q1-2"></canvas>
             </div>
           </div>
@@ -234,20 +234,20 @@
       <div class="divider indigo"></div>
 
 
-      <div class="grey-research p-5" id="q2">
+      <div class="grey-research p-lg-5" id="q2">
         <h1 class="mb-5 heading">The home purchase plan</h1>
         <div class="container p-5">
           <div class="row g-5 pb-5">
-            <div class="col-6"></div>
-            <div class="col-6">
+            <div class="col-lg-6"></div>
+            <div class="col-lg-6">
               <h3 class="p-3">How does it work?</h3>   
             </div>
           </div>
           <div class="row g-5">
-            <div class="col-6">
+            <div class="col-lg-6 chart">
               <canvas id="q2-1"></canvas>
             </div>
-            <div class="col-6">
+            <div class="col-lg-6">
               <p1>Assuming the appropriate checks are carried out, the bank can agree a contract with the buyer in which they both collectively buy the house. The buyer would place a deposit on the house and the bank would own the rest of house. The buyer can then buy back the bank's equity in the house through deferred payments over the term of the contract.</p1>
               <br>
               <br>
@@ -271,17 +271,17 @@
         </div>
       </div>
 
-      <div class="white-research p-5">
+      <div class="white-research p-lg-5">
       
         <div class="container p-5">
           <div class="row g-5 pb-5">
-            <div class="col-6">
+            <div class="col-lg-6">
               <h3 class="p-3">The plan</h3>  
             </div>
-            <div class="col-6"></div>
+            <div class="col-lg-6"></div>
           </div>
           <div class="row g-5">
-            <div class="col-6">
+            <div class="col-lg-6">
               <p1>The following is a model of the mortgage plan illustrated earlier but this replaces interest with rent, forming a home purchase plan rather than a mortgage.</p1>
               <br/>
               <br/>
@@ -300,27 +300,27 @@
               <br/>
               <p1>I stated the region the house is located in as this can help reduce the risk associated with the bank purchasing the house as we will see later on. The reason why this specific region was chosen was because it closely matched the average UK house price for first time buyers.</p1>
             </div>
-            <div class="col-6">
+            <div class="col-lg-6 chart">
               <canvas id="q2-2" class="shadow"></canvas>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="grey-research p-5">
+      <div class="grey-research p-lg-5">
       
         <div class="container p-5">
           <div class="row g-5 pb-5">
-            <div class="col-6"></div>
-            <div class="col-6">
+            <div class="col-lg-6"></div>
+            <div class="col-lg-6">
               <h3 class="p-3">The main advantage & disadvantage</h3>   
             </div>
           </div>
           <div class="row g-5">
-            <div class="col-6">
+            <div class="col-lg-6">
              
             </div>
-            <div class="col-6">
+            <div class="col-lg-6">
               <p1>The main reason why this method of purchasing a house should be used is to reduce the burden on the house buyer in the event of an unexpected default. Since the buyer's payments were contributing to ownership of the house as opposed to paying contributions on a loan, in the event of default, it is clear that the buyer is entitiled to the portion of a potential house sale that reflects their equity.</p1>
               <br/>
               <br/>
@@ -331,17 +331,17 @@
         </div>
       </div>
 
-      <div class="white-research p-5">
+      <div class="white-research p-lg-5">
       
         <div class="container p-5">
           <div class="row g-5 pb-5">
-            <div class="col-6">
+            <div class="col-lg-6">
               <h3 class="p-3">Reducing the risk</h3>  
             </div>
-            <div class="col-6"></div>
+            <div class="col-lg-6"></div>
           </div>
           <div class="row g-5">
-            <div class="col-6">
+            <div class="col-lg-6">
               <p1>The amortization technique can help reduce the risk for banks. It can replicate a payment structure similar to that of a capital repayment mortgage.</p1>
               <br/>
               <br/>
@@ -355,27 +355,27 @@
               <br>
               <p1>In addition to using amortization to determine the monthly rent, if the bank could forecast the volatility of an area's house prices, it can also help decide how to set rent to minimize risk in case the area's housing market may crash.</p1>
             </div>
-            <div class="col-6">
+            <div class="col-lg-6">
               <img class="shadow" alt="graph" src="Mortgage/Reduction.png">
             </div>
           </div>
         </div>
       </div>
 
-      <div class="grey-research p-5">
+      <div class="grey-research p-lg-5">
       
         <div class="container p-5">
           <div class="row g-5 pb-5">
-            <div class="col-6"></div>
-            <div class="col-6">
+            <div class="col-lg-6"></div>
+            <div class="col-lg-6">
               <h3 class="p-3">Neural network: Predicting the percentage change of an area's house prices</h3>   
             </div>
           </div>
           <div class="row g-5">
-            <div class="col-6">
+            <div class="col-lg-6 chart">
               <canvas id="q2-3"></canvas>
             </div>
-            <div class="col-6">
+            <div class="col-lg-6">
               <h5 class="model">Objective: Predict the magnitude of the change in house prices in South West England</h5>
               <br>
               <br>
@@ -404,7 +404,7 @@
         </div>
       </div>
 
-      <div class="white-research p-5"></div>
+      <div class="white-research p-lg-5"></div>
 
     </section>
 
