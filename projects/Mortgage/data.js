@@ -7,6 +7,8 @@ function mortgageYears() {
     return numbers;
 }
 
+Chart.defaults.font.family = 'outfit';
+
 document.addEventListener('DOMContentLoaded', function () {
     var ctx = document.getElementById('q1-1').getContext('2d');
     var barChart = new Chart(ctx, {
@@ -32,6 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }]
         },
         options: {
+            maintainAspectRatio: false,
             responsive: true,
             scales: {
                 y: {
@@ -82,6 +85,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }]
         },
         options: {
+            maintainAspectRatio: false,
             responsive: true,
             scales: {
                 y: {
@@ -126,6 +130,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }]
         },
         options: {
+            maintainAspectRatio: false,
             responsive: true,
             plugins: {
                 title: {
@@ -163,6 +168,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }]
         },
         options: {
+            maintainAspectRatio: false,
             responsive: true,
             scales: {
                 y: {
@@ -183,7 +189,8 @@ document.addEventListener('DOMContentLoaded', function () {
             plugins: {
                 title: {
                     display: true,
-                    text: 'Average house prices in 1997 Q4 for first time buyers in different UK regions'
+                    text: 'Average house prices for first time buyers in different regions (1997 Q4)',
+                
                 },
                 legend: {
                     display: false
@@ -239,5 +246,8 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         }
     });
+});
+
+
 });
 
