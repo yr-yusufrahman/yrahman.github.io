@@ -64,7 +64,6 @@ a {
 
 
 .welcome {
-    background-color: var(--grey);
     padding: 20px;
     font-family: 'outfit';
     font-weight: bold;
@@ -248,6 +247,10 @@ a {
 .divider {
     background-color: var(--navy);
     height: 10vh;
+}
+
+.grey {
+    background-color: var(--grey);
 }
 
 .ice {
